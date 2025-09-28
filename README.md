@@ -22,7 +22,6 @@ By instantly adjusting parameters and observed data, users can experience firsth
 Click the link below to immediately access the interactive tool:
 
 **[View Live Site (GitHub Pages Deployment)](https://chunyunglo.github.io/MLE_class/)**
-*(Please ensure this link points to your deployed site)*
 
 -----
 
