@@ -1,61 +1,72 @@
-# 最大概似估計 (MLE) 互動式視覺化工具
+# Maximum Likelihood Estimation (MLE) Interactive Visualization Tool
 
-## 專案簡介
+## Project Overview
 
-這個專案提供了一個直觀且互動式的網頁介面，旨在幫助學習者和資料科學家 **視覺化理解最大概似估計 (Maximum Likelihood Estimation, MLE)** 的核心概念。
+This project provides an intuitive and interactive web interface designed to help students and data scientists **visually understand the core concepts of Maximum Likelihood Estimation (MLE)**.
 
-透過即時調整參數和觀察值，使用者可以親身體驗概似函數 (Likelihood Function) 如何隨著資料和假設的變化而起伏，進而掌握 MLE 的數學直覺。
+By instantly adjusting parameters and observed data, users can experience firsthand how the likelihood function fluctuates based on data and underlying assumptions, thereby grasping the mathematical intuition behind MLE.
 
-## 主要功能特色
+## Key Features
 
-  * **📈 二項分配概似函數動態顯示：**
-    即時繪製二項分配 $\text{Binomial}(n, p)$ 的概似函數 $L(p|\text{data})$。
-  * **🖱️ 參數與觀察值互動調整：**
-      * **成功次數 ($k$) 與試驗次數 ($n$)：** 透過滑桿或輸入框，即時調整觀察到的數據。
-      * **概似參數 ($p$)：** 觀察當 $p$ 值變化時，資料發生的可能性（即概似值）如何改變。
-  * **🔍 最大概似估計值 ($p_{MLE}$) 標示：**
-    圖表會自動標示出概似函數的最高點，直觀顯示當前觀察數據下的 $\text{MLE}$ 估計值 $p_{MLE}$。
-  * **🧠 建立數學直覺：** 透過視覺化的方式，讓使用者深刻理解為何最大概似估計是尋找「最可能產生當前觀測數據」的參數值。
+  * **Dynamic Binomial Likelihood Function:**
+    The application instantly plots the likelihood function, $L(p|\text{data})$, for the Binomial distribution $\text{Binomial}(n, p)$.
+  * **Interactive Parameter Adjustment:**
+      * **Successes ($k$) and Trials ($n$):** Adjust the observed data using sliders or input fields.
+      * **Likelihood Parameter ($p$):** Observe how the probability of the current data (the likelihood value) changes as the parameter $p$ is varied.
+  * **MLE Value Indication:**
+    The chart automatically highlights the peak of the likelihood function, visually indicating the Maximum Likelihood Estimate ($p_{MLE}$) for the given observations.
+  * **Build Mathematical Intuition:** The visualization helps users understand why MLE identifies the parameter value that is "most likely to have produced the observed data."
 
-## 線上預覽
+## Live Demo
 
-點擊下方連結，立即體驗互動式工具：
+Click the link below to immediately access the interactive tool:
 
-**[前往網站預覽 (GitHub Pages 部署)](https://chunyunglo.github.io/MLE_class)**
+**[View Live Site (GitHub Pages Deployment)](https://chunyunglo.github.io/MLE_class/)**
+*(Please ensure this link points to your deployed site)*
 
-## 本地開發與部署指南
+-----
 
-如果您想在本地運行或修改此專案：
+## Development and Deployment Guide
 
-### 1\. 取得專案
+### 1\. Local Setup
+
+To clone and run the project locally:
 
 ```bash
-# 複製儲存庫
+# Clone the repository
 git clone https://github.com/chunyunglo/MLE_class.git
 cd MLE_class
 ```
 
-### 2\. 安裝依賴套件
+### 2\. Install Dependencies
+
+Install the required packages:
 
 ```bash
 npm install
-# 或使用 yarn
+# or
 # yarn install
 ```
 
-### 3\. 本地啟動
+### 3\. Run Locally
 
-專案將在 `http://localhost:5173` 運行。
+The application will start on `http://localhost:5173`.
 
 ```bash
 npm run dev
 ```
 
-### 4\. 部署至 GitHub Pages
+### 4\. GitHub Pages Deployment
 
-此專案已配置使用 `gh-pages` 套件進行自動化部署：
+The application is configured for automated deployment to GitHub Pages using the `gh-pages` package.
+
+To update the live site after making changes:
 
 ```bash
-# 確保您已經在主分支提交了所有程式碼
+# Ensure your changes are committed to the main branch first
 npm run deploy 
 ```
+
+This command runs the build process and pushes the static assets to the `gh-pages` branch for publishing.
+
+-----
