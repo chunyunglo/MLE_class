@@ -21,7 +21,7 @@
 
 點擊下方連結，立即體驗互動式工具：
 
-**[前往網站預覽 (GitHub Pages 部署)](https://www.google.com/search?q=https://chunyunglo.github.io/MLE_class)**
+**[前往網站預覽 (GitHub Pages 部署)](https://chunyunglo.github.io/MLE_class)**
 
 ## 本地開發與部署指南
 
